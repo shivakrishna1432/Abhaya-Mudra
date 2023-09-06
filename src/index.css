@@ -1,13 +1,141 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-container {
+  background-image: url("https://i.imgur.com/An2Rl2R.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.sidebar-main-container {
+  width: 36vw;
+  transition: all 1s;
+}
+.sidebar-container {
+  background: #f3f3f3;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: 90vh;
+  justify-content: flex-start;
+  margin-bottom: 1.7vw;
+  overflow-x: clip;
+  overflow-y: auto;
+  width: 26.6vw;
+}
+.text-container {
+  direction: ltr;
+  padding: 2vw 3vw 3vw;
+}
+.back-btn {
+  margin-bottom: 2vw;
+}
+.head {
+  color: #1e1e1e;
+  font-family: Bitter;
+  font-size: 1.7vw;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.9vw;
+  overflow-wrap: break-word;
+  text-transform: uppercase;
+  width: 21vw;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.79vw;
+  margin-top: 2vw;
+}
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-right: 2vw;
+  padding-top: 0.5vw;
+  text-align: center;
+}
+.details {
+  margin: 0;
+  font-size: 0.84vw;
+  line-height: 1.1vw;
+  margin: 0;
+}
+.description-text {
+  font-weight: 400;
+  font-size: 1vw;
+  margin-bottom: 0.6vw;
+  margin-top: 1.6vw;
+}
+.background-image-container {
+  display: flex;
+  flex: 1 1 auto;
+}
+/* .sidebar {
+  width: auto;
+  transition: all 1s;
+} */
+.sidebar-main-container.active {
+  width: 0;
+}
+.scroll-line {
+  display: none;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+  align-self: center;
+}
+.side-bar {
+  align-self: flex-start;
+  color: #c44949;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+}
+.icons {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background-color: white;
+  border-radius: 2px;
+}
+.btn-container {
+  margin-top: 10px;
+}
+.box-contain {
+  display: flex;
+}
+.icons.icons-right {
+  background-color: #944040;
+}
+.add-btn {
+  font-size: 8px;
+  padding: 2px 4px;
 }
